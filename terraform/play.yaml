@@ -47,7 +47,7 @@
         state: directory
     - name: We copy the main.tf terraforn file from the course repo
       copy:
-        src: "{{ lookup('env', 'HOME') }}/comptia-automation/terraform/main.tf"
+        src: "{{ lookup('env', 'HOME') }}/terraform-vagrant-ansible-automation/terraform/main.tf"
         dest: "{{ lookup('env', 'HOME') }}/terraform/main.tf"
     - name: Create the index page for the website
       copy:
